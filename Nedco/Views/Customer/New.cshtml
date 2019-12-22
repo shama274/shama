@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>New</h2>
+<h2>New Customer</h2>
+@using (Html.BeginForm("Save", "Customer", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>Name: </td>
+            <td><input type="text" id="name" name="name" /></td>
+        </tr>
+        <tr>
+            <td>Address: </td>
+            <td><input type="text" id="address" name="address" /></td>
+        </tr>
+        <tr>
+            <td>Mobile: </td>
+            <td><input type="text" id="mobile" name="mobile" /></td>
+        </tr>
+        <tr>
+            <td>IBAN: </td>
+            <td><input type="text" id="iban" name="iban" /></td>
+        </tr>
+    </table>
+
+    <input type="submit" value="Save" />
+}
+

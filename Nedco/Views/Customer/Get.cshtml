@@ -1,0 +1,28 @@
+﻿@using  Nedco.Models
+@{
+    ViewBag.Title = "Get";
+}
+
+<h2>Get</h2>
+
+<table style="width: 100%">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Mobile</td>
+            <td>IBAN</td>
+        </tr>
+    </thead>
+    @foreach (Customer customer in ViewBag.customers)
+    {
+        <tr>
+            <td>@customer.Id</td>
+            <td>@customer.Name</td>
+            <td>@customer.Address</td>
+            <td>@customer.Mobile</td>
+            <td>@customer.IBAN</td>
+        </tr>
+    }
+</table>
